@@ -1,0 +1,11 @@
+<h3>Secure Photos</h3>
+<div class="item" *ngFor="let item of images">
+  <div class="img"></div>
+  {{ item.title }}
+  <img
+    src="https://cdn.iconscout.com/icon/free/png-64/delete-725-457776.png"
+    class="avatar"
+    (click)="delete(item.id)"
+  />
+  <div>Album {{ item.id }}</div>
+</div>
